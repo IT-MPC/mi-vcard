@@ -56,8 +56,28 @@
     }
     
     h1 { font-size: 1.4rem; margin-bottom: 4px; color: #1a1a1a; }
-    p.title { color: #666; font-size: 0.95rem; margin-bottom: 20px; font-weight: 500; }
+    p.title { color: #666; font-size: 0.95rem; margin-bottom: 15px; font-weight: 500; }
     
+    /* Bloque del Número Celular */
+    .phone-box {
+      margin-bottom: 20px;
+    }
+    .phone-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 8px 16px;
+      background-color: #eef5fc;
+      border-radius: 20px;
+      transition: background 0.2s ease;
+    }
+    .phone-link:hover { background-color: #e0edf9; }
+
     /* Botón de guardar contacto (.vcf) */
     .btn-download {
       display: block;
@@ -103,19 +123,24 @@
     <div class="profile-section">
       <img src="foto.jpeg" alt="Foto de Perfil" class="profile-img">
       
-      <!-- CAMBIA ESTOS DATOS PARA CADA USUARIO -->
-      <h1>Nombre Apellido</h1>
-      <p class="title">Cargo / Profesión</p>
+      <!-- DATOS DEL USUARIO -->
+      <h1>Alex Huamán</h1>
+      <p class="title">Jefe de Tecnología de la Información y Comunicaciones</p>
+
+      <!-- NÚMERO CELULAR (Llama directamente al presionar) -->
+      <div class="phone-box">
+        <a href="tel:+51992197030" class="phone-link">
+          📞 +51 992 197 030
+        </a>
+      </div>
 
       <!-- Descarga contacto.vcf -->
       <a href="contacto.vcf" download class="btn-download">💾 Guardar en Contactos</a>
 
-      <!-- ENLACES SOCIALES DE CADA USUARIO -->
+      <!-- ENLACES SOCIALES -->
       <div class="social-links">
-        <a href="https://wa.me/1234567890" target="_blank" class="social-link">WhatsApp</a>
-        <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="social-link">LinkedIn</a>
-        <a href="https://instagram.com/tu-usuario" target="_blank" class="social-link">Instagram</a>
-        <a href="https://tuempresa.com" target="_blank" class="social-link">Sitio Web</a>
+        <a href="https://wa.me/51987654321" target="_blank" class="social-link">WhatsApp</a>
+        <a href="https://quillaresources.com" target="_blank" class="social-link">Sitio Web</a>
       </div>
     </div>
   </div>
