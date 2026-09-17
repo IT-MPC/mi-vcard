@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta Digital de Contacto</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      max-width: 400px;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+    }
+    
+    /* Logo de la empresa */
+    .header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .company-logo {
+      max-height: 45px;
+      max-width: 80%;
+      object-fit: contain;
+    }
+
+    /* Perfil del usuario */
+    .profile-section {
+      padding: 25px 20px;
+    }
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #0066cc;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    h1 { font-size: 1.4rem; margin-bottom: 4px; color: #1a1a1a; }
+    p.title { color: #666; font-size: 0.95rem; margin-bottom: 20px; font-weight: 500; }
+    
+    /* Botón de guardar contacto (.vcf) */
+    .btn-download {
+      display: block;
+      background-color: #0066cc;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      transition: background 0.2s ease;
+    }
+    .btn-download:hover { background-color: #0052a3; }
+    
+    /* Enlaces a Redes Sociales */
+    .social-links { display: flex; flex-direction: column; gap: 10px; }
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f8f9fa;
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid #eaeaea;
+      transition: background 0.2s ease;
+    }
+    .social-link:hover { background-color: #f0f0f0; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Carga logo.png -->
+    <div class="header">
+      <img src="logo.png" alt="Logo Empresa" class="company-logo">
+    </div>
+
+    <!-- Carga foto.jpeg -->
+    <div class="profile-section">
+      <img src="foto.jpeg" alt="Foto de Perfil" class="profile-img">
+      
+      <!-- CAMBIA ESTOS DATOS PARA CADA USUARIO -->
+      <h1>Nombre Apellido</h1>
+      <p class="title">Cargo / Profesión</p>
+
+      <!-- Descarga contacto.vcf -->
+      <a href="contacto.vcf" download class="btn-download">💾 Guardar en Contactos</a>
+
+      <!-- ENLACES SOCIALES DE CADA USUARIO -->
+      <div class="social-links">
+        <a href="https://wa.me/1234567890" target="_blank" class="social-link">WhatsApp</a>
+        <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="social-link">LinkedIn</a>
+        <a href="https://instagram.com/tu-usuario" target="_blank" class="social-link">Instagram</a>
+        <a href="https://tuempresa.com" target="_blank" class="social-link">Sitio Web</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
