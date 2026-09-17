@@ -26,7 +26,7 @@
       text-align: center;
     }
     
-    /* Logo de la empresa */
+    /* Logo de la empresa (Aumentado de tamaño) */
     .header {
       background-color: #ffffff;
       padding: 20px;
@@ -37,7 +37,7 @@
     }
     .company-logo {
       max-height: 90px;
-      max-width: 98%;
+      max-width: 90%;
       object-fit: contain;
     }
 
@@ -92,6 +92,26 @@
     }
     .btn-download:hover { background-color: #0052a3; }
     
+    /* Estilos del Código QR */
+    .qr-box {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .qr-title {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .qr-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 8px;
+      border: 1px solid #eaeaea;
+      padding: 5px;
+      background: #fff;
+    }
+
     /* Enlaces a Redes Sociales */
     .social-links { display: flex; flex-direction: column; gap: 10px; }
     .social-link {
@@ -119,12 +139,12 @@
       <img src="logo.png" alt="Logo Empresa" class="company-logo">
     </div>
 
-    <!-- Carga foto.jpeg -->
+    <!-- Carga Foto.jpeg -->
     <div class="profile-section">
-      <img src="foto.jpeg" alt="Foto de Perfil" class="profile-img">
+      <img src="Foto.jpeg" alt="Foto de Perfil" class="profile-img">
       
       <!-- DATOS DEL USUARIO -->
-      <h1>Alex Huamán</h1>
+      <h1>Alex Huaman</h1>
       <p class="title">Jefe de Tecnología de la Información y Comunicaciones</p>
 
       <!-- NÚMERO CELULAR (Llama directamente al presionar) -->
@@ -137,9 +157,15 @@
       <!-- Descarga contacto.vcf -->
       <a href="contacto.vcf" download class="btn-download">💾 Guardar en Contactos</a>
 
+      <!-- BLOQUE DEL CÓDIGO QR -->
+      <div class="qr-box">
+        <p class="qr-title">Escanea para compartir mi tarjeta:</p>
+        <img src="qr" alt="Código QR de contacto" class="qr-img">
+      </div>
+
       <!-- ENLACES SOCIALES -->
       <div class="social-links">
-        <a href="https://wa.me/51987654321" target="_blank" class="social-link">WhatsApp</a>
+        <a href="https://wa.me/51992197030" target="_blank" class="social-link">WhatsApp</a>
         <a href="https://quillaresources.com" target="_blank" class="social-link">Sitio Web</a>
       </div>
     </div>
