@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Nombre Apellido
+N:Apellido;Nombre;;;
+ORG:Nombre de tu Empresa o Proyecto
+TITLE:Tu Cargo o Profesión
+TEL;TYPE=CELL:+1234567890
+EMAIL:correo@ejemplo.com
+URL:https://tuweb.com
+END:VCARD
