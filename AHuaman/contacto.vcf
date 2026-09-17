@@ -1,10 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Nombre Apellido
-N:Apellido;Nombre;;;
-ORG:Nombre de tu Empresa o Proyecto
-TITLE:Tu Cargo o Profesión
-TEL;TYPE=CELL:+1234567890
-EMAIL:correo@ejemplo.com
-URL:https://tuweb.com
+FN:Alex Huamán
+N:Huamán;Alex;;;
+ORG:Minera Pampa de Cobre S.A.C
+TITLE:Jefe de Tecnología de la Información y Comunicaciones
+TEL;TYPE=CELL:+51992197030
+EMAIL:ahuaman@quillaresources.com
+URL:https://quillaresources.com
 END:VCARD
